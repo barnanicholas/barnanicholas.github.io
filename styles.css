@@ -1,0 +1,44 @@
+/* Add your CSS styles here */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   background-color: rgb(122, 6, 6);
+   color: hsl(0, 0%, 100%);
+   padding: 10px 0;
+   position: fixed;
+   width: 100%;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav li {
+   display: inline;
+   margin-right: 20px;
+}
+
+nav a {
+   text-decoration: none;
+   color: #fff;
+   font-weight: bold;
+}
+
+section {
+   margin: 20px;
+   padding: 20px;
+   border: 1px solid #ddd;
+}
+
+footer {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 10px 0;
+}
