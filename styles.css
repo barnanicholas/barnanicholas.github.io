@@ -1,16 +1,18 @@
-/* Add your CSS styles here */
+/* Center the text in the navigation bar and change the color to white */
 body {
-   font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-}
+   background-image: url('assets/cement.jpg'); /* Replace 'cement.jpg' with the actual image file name and extension */
+   background-size: cover; /* Adjust as needed */
+   background-repeat: no-repeat; /* Adjust as needed */
+   background-attachment: fixed; /* Optional - if you want a fixed background */
+ }
 
 header {
-   background-color: rgb(122, 6, 6);
-   color: hsl(0, 0%, 100%);
-   padding: 10px 0;
-   position: fixed;
+   background-color: #661429;
+   color: rgb(102, 37, 37); /* Text color for the navigation bar */
+   padding: 1% 0;
+   position: relative;
    width: 100%;
+   text-align: center; /* Center the text in the navigation bar */
 }
 
 nav ul {
@@ -26,19 +28,35 @@ nav li {
 
 nav a {
    text-decoration: none;
-   color: #fff;
+   color: white; /* Text color for the navigation links */
    font-weight: bold;
 }
 
 section {
    margin: 20px;
    padding: 20px;
-   border: 1px solid #ddd;
+   background-color: #fff; /* Background color for sections */
 }
 
 footer {
-   background-color: #333;
-   color: #fff;
+   background-color: #661429;
+   color: white; /* Text color for the footer */
    text-align: center;
    padding: 10px 0;
+}
+
+h2 {
+   /* Your custom styles for h2 go here */
+   font-size: 25; /* Example font size */
+   color: #000000; /* Example text color */
+   text-align: center;
+   /* Add any other styles you want for h2 within the section */
+ }
+ .about-content {
+   display: flex;
+   align-items: center;
+}
+
+.about-content img {
+   margin-right: 10px; /* Adjust the margin as needed for spacing */
 }
