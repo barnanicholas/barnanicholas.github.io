@@ -1,107 +1,72 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" type="text/css" href="styles.css">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home | Nicholas Heinrich-Barna</title>
+    <title>Nicholas Heinrich-Barna</title>
     <link rel="icon" href="assets/logo.png" type="image/png"> 
+    <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Current Research</a></li>
-            <li><a href="#edu">Education</a></li>
-            <li><a href="#workex">Work Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
 <body>
-    <section id="home">
-        <h2>Nicholas Heinrich-Barna</h2>
-    </section>
+    <div class="container">
+        <!-- Name at the top -->
+        <header>
+            <h1>Nicholas Heinrich-Barna</h1>
+        </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="assets/profile.jpg" alt="Profile Picture" width="100%" height="100%">
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
+                <p>
+                    My name is Nicholas Heinrich-Barna, and I am a first-year PhD candidate. I graduated in the spring of 2023 from TAMU with a double major in Computer Engineering and Petroleum Engineering. When I first entered university, I knew only broadly that I wanted to do something with math...
+                </p>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section id="research">
+            <h2>Current Research</h2>
             <p>
-            My name is Nicholas Heinrich-Barna, and I am a first-year PhD candidate. I graduated in the spring of 2023 from TAMU with a double major in Computer Engineering and Petroleum Engineering. When I first entered university, I knew only broadly that I wanted to do something with math. Engineering seemed like a good choice, a broad field with numerous possibilities. Like most, it was during the course of my undergraduate studies that I honed in on my passion.<br>
-            By navigating two degrees, I began to see all disciplines as a collection of interconnected systems. From typical computer programming to drilling engineering, I had the advantage of learning a large breadth of materials. Over time, I began to see patterns arise in all of my engineering classes. These patterns let me see the world of engineering less as separate distinct disciplines and more as interconnected systems wherein the decisions made in one area could affect the outcomes in a completely separate area. By evaluating these relationships, I began to believe these connections were a potential site for malpractice and malfeasance. This realization was pivotal in leading me to one of the most vital and influential industries today: Cyber Security
+                Modern embedded systems, vital across industries like healthcare, transportation, and communication, heavily depend on hardware as the root of trust...
             </p>
-        </div>  
-    </section>
+        </section>
 
-    <section id="research">
-        <h2>Current Research</h2>
-        <p>Modern embedded systems, vital across industries like healthcare, transportation, and communication, heavily depend on hardware as the root of trust. Commercial products from industry giants like Intel, AMD, TI, and ARM are central to these systems. However, the increasing complexity of hardware designs has given rise to security-critical vulnerabilities that disrupt conventional threat models. Cross-layer attacks, which exploit both hardware and software, pose significant threats.
-        To address this challenge, I propose the development of a hybrid hardware verification framework called VeriFuzz. This framework aims to combine the strengths of formal verification and hardware fuzzing to efficiently detect and mitigate security vulnerabilities in complex embedded systems, such as modern processors.</p>
-    </section>
+        <!-- Education -->
+        <section id="edu">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Ph.D. in Computer Engineering</strong>, Texas A&M University, Aug 2023 – Present</li>
+                <li><strong>B.Sc. in Computer Engineering</strong>, Texas A&M University, Aug 2018 – May 2023</li>
+                <li><strong>B.Sc. in Petroleum Engineering</strong>, Texas A&M University, Aug 2018 – May 2023</li>
+            </ul>
+        </section>
 
-    <section id="edu">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <strong>Ph.D. in Computer Engineering</strong><br>
-                Texas A&M University, College Station<br>
-                August 2023 - Present
-            </li>
-            <li>
-                <strong>B. Science in Computer Engineering</strong><br>
-                Texas A&M University, College Station<br>
-                August 2018 - May 2023
-            </li>
-            <li>
-                <strong>B. Science in Petroleum Engineering</strong><br>
-                Texas A&M University, College Station<br>
-                August 2018 - May 2023
-            </li>
-        </ul>
-    </section>
+        <!-- Work Experience -->
+        <section id="workex">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Research Assistant</strong>, SETH Lab, Texas A&M University — Security assurance of industrial control systems using fuzzing...</li>
+                <li><strong>Vulnerability Research Intern</strong>, CODEX, Raytheon — Worked on exploiting firmware vulnerabilities on embedded systems...</li>
+                <li><strong>Vulnerability Research Intern</strong>, CODEX, Raytheon — Built a decentralized cloud computing platform for data analysis...</li>
+            </ul>
+        </section>
 
-    <section id="workex">
-        <h2>Experience</h2>
-        <ul>
-            <li>
-                <strong>Research Assistant</strong><br>
-                SETH Lab, Texas A&M University<br>
-                Currently, I work on security assurance of industrial control systems. I primarily utilize fuzzing; however, instead of simulating hardware, I utilize
-                custom made firmware and drivers to access peripherals directly. Previously, I designed and
-                tested verification techniques to be used on open-source processors; primarily fuzzing
-                simulated hardware.
-            </li>
-            <li>
-                <strong>Vulnerability Research Intern</strong><br>
-                CODEX, Raytheon<br>
-                I worked
-                on exploiting firmware vulnerabilities on embedded systems. I primarily focused on
-                reversing firmware binaries to find bugs that can be turned into DOS exploits
-            </li>
-            <li>
-                <strong>Vulnerability Research Intern</strong><br>
-                CODEX, Raytheon<br>
-                I built a decentralized cloud computing platform to rapidly sort large amounts of data. I used the Elastic stack, alongside TIKA, and other custom made tools.
-            </li>
-        </ul>
-    </section>
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your.email@domain.com">your.email@domain.com</a></p>
+            <p>
+                <a href="[LinkedIn Profile]">LinkedIn</a> | 
+                <a href="[Twitter Profile]">Twitter</a> | 
+                <a href="[ResearchGate Profile]">ResearchGate</a>
+            </p>
+        </section>
 
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you have any questions or would like to get in touch, you can reach me at [Your Email Address]. You can also connect with me on my professional profiles:</p>
-        <ul>
-            <li><a href="[LinkedIn Profile]">LinkedIn</a></li>
-            <li><a href="[Twitter Profile]">Twitter</a></li>
-            <li><a href="[ResearchGate Profile]">ResearchGate</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Nicholas Heinrich-Barna. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Nicholas Heinrich-Barna</p>
+        </footer>
+    </div>
 </body>
 </html>

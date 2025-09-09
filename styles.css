@@ -1,55 +1,82 @@
-
-header {
-   background-color: #661429;
-   color: rgb(102, 37, 37); /* Text color for the navigation bar */
-   padding: 1% 0;
-   position: relative;
-   width: 100%;
-   text-align: center; /* Center the text in the navigation bar */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav ul {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
 }
 
-nav li {
-   display: inline;
-   margin-right: 20px;
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-nav a {
-   text-decoration: none;
-   color: white; /* Text color for the navigation links */
-   font-weight: bold;
-}
-
-section {
-   margin: 20px;
-   padding: 20px;
-   background-color: #fff; /* Background color for sections */
-}
-
-footer {
-   background-color: #661429;
-   color: white; /* Text color for the footer */
-   text-align: center;
-   padding: 10px 0;
+/* Headings */
+h1 {
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
 h2 {
-   /* Your custom styles for h2 go here */
-   font-size: 25; /* Example font size */
-   color: #000000; /* Example text color */
-   text-align: center;
-   /* Add any other styles you want for h2 within the section */
- }
- .about-content {
-   display: flex;
-   align-items: center;
+    font-size: 1.5em;
+    margin: 1.5em 0 0.8em 0;
+    font-weight: 500;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.3em;
 }
 
-.about-content img {
-   margin-right: 10px; /* Adjust the margin as needed for spacing */
+/* Paragraphs and lists */
+p, li {
+    margin-bottom: 1em;
+    font-size: 1.05em;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 0.8em;
+}
+
+/* About section */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 160px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+/* Links */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
 }
