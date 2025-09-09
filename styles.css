@@ -45,8 +45,8 @@ header .links a:hover {
 }
 
 header .profile-photo img {
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: auto;
     border-radius: 25%;
     object-fit: cover;
 }
@@ -88,4 +88,21 @@ footer {
     border-top: 1px solid #ddd;
     padding-top: 1rem;
     margin-top: 3rem;
+}
+
+.education-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* space between text and image */
+}
+
+.education-content ul {
+  flex: 1; /* take remaining space */
+}
+
+.education-image {
+  width: 200px;      /* adjust as needed */
+  height: auto;
+  border-radius: 8px; /* optional rounded corners */
+  flex-shrink: 0;     /* prevent image from shrinking */
 }
